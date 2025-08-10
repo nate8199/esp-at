@@ -1,7 +1,11 @@
   
 name: C/C++ CI
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - master
+      - release/*
 
 jobs:
   build-esp8285-1MB-at:
